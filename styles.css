@@ -689,3 +689,7 @@ footer{
     transform: scale(1) rotate(0);
   }
 }
+.book-submit{
+  margin-top: -10px;
+  justify-self: start;
+}
