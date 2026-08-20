@@ -63,18 +63,22 @@ form.addEventListener('submit', async (e) => {
 
     if (!res.ok) throw new Error('Request failed');
 
-    status.innerHTML = `
+
+status.innerHTML = `
   <div class="success-message">
     <div class="success-icon">✓</div>
-    <div>
+
+    <div class="success-text">
       <strong>Request sent successfully!</strong>
-      <p>We'll confirm shortly by email or WhatsApp.</p>
+      <span>We'll confirm shortly by email or WhatsApp.</span>
     </div>
   </div>
 `;
 
 status.classList.add('ok');
 form.reset();
+  
+    
   } catch (err) {
     status.textContent = 'Something went wrong sending that. Please message us directly on WhatsApp/Telegram instead.';
     status.classList.add('err');
