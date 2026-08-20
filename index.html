@@ -209,49 +209,76 @@
 <!-- ================= BOOKING ================= -->
 <section class="section-basalt2" id="booking">
   <div class="wrap booking-grid">
+
+    <!-- Booking information / direct contact -->
     <div class="booking-info reveal">
       <span class="section-eyebrow">Booking</span>
+
       <h2>Tell us the dates. We'll confirm within a day.</h2>
-      <p>Send your details and preferred journey — the request goes straight to our Telegram, so you'll usually hear back the same day, even from town with patchy signal.</p>
+
+      <p>
+        Send your details and preferred journey — the request goes straight
+        to our Telegram, so you'll usually hear back the same day, even from
+        town with patchy signal.
+      </p>
+
       <div class="direct-contact">
-  <p>Prefer to message directly?</p>
+        <p>Prefer to message directly?</p>
 
-  <p>
-    WhatsApp:
-    <a href="https://wa.me/251945141773" target="_blank" rel="noopener">
-      +251 945 141 773
-    </a>
-  </p>
+        <p>
+          WhatsApp:
+          <a href="https://wa.me/251945141773" target="_blank" rel="noopener">
+            +251 945 141 773
+          </a>
+        </p>
 
-  <p>
-    Telegram:
-    <a href="https://t.me/Estifanos4" target="_blank" rel="noopener">
-      @Estifanos4
-    </a>
-  </p>
+        <p>
+          Telegram:
+          <a href="https://t.me/Estifanos4" target="_blank" rel="noopener">
+            @Estifanos4
+          </a>
+        </p>
 
-  <p>
-    Email:
-    <a href="mailto:estifanosmesganaw@gmail.com?subject=Lalibela%20Soul%20Tours%20Inquiry">
-      estifanosmesganaw@gmail.com
-    </a>
-  </p>
-</div>
-      <form class="book-form reveal" id="bookForm" autocomplete="on">
+        <p>
+          Email:
+          <a href="mailto:estifanosmesganaw@gmail.com?subject=Lalibela%20Soul%20Tours%20Inquiry">
+            estifanosmesganaw@gmail.com
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Booking form -->
+    <form class="book-form reveal" id="bookForm" autocomplete="on">
+
       <div class="field-row">
         <div>
           <label for="name">Full name</label>
-          <input type="text" id="name" name="name" placeholder="Jane Traveler" required>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Jane Traveler"
+            required
+          >
         </div>
+
         <div>
           <label for="contact">Email or WhatsApp</label>
-          <input type="text" id="contact" name="contact" placeholder="jane@email.com" required>
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            placeholder="jane@email.com"
+            required
+          >
         </div>
       </div>
 
       <div class="field-row">
         <div>
           <label for="package">Journey</label>
+
           <select id="package" name="package" required>
             <option value="">Choose a journey</option>
             <option>The Full Circuit — $60/person</option>
@@ -261,31 +288,68 @@
             <option>Not sure yet</option>
           </select>
         </div>
+
         <div>
           <label for="guests">Number of guests</label>
-          <input type="number" id="guests" name="guests" min="1" max="20" value="2" required>
+
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="20"
+            value="2"
+            required
+          >
         </div>
       </div>
 
       <div class="field-row">
         <div>
           <label for="date">Preferred date</label>
-          <input type="date" id="date" name="date" required>
+
+          <input
+            type="date"
+            id="date"
+            name="date"
+            required
+          >
         </div>
+
         <div>
-          <label for="whatsapp">Country (for logistics)</label>
-          <input type="text" id="country" name="country" placeholder="e.g. Canada">
+          <label for="country">Country (for logistics)</label>
+
+          <input
+            type="text"
+            id="country"
+            name="country"
+            placeholder="e.g. Canada"
+          >
         </div>
       </div>
 
       <div>
         <label for="message">Anything we should know?</label>
-        <textarea id="message" name="message" placeholder="Fitness level, festival dates you're aiming for, dietary notes..."></textarea>
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Fitness level, festival dates you're aiming for, dietary notes..."
+        ></textarea>
       </div>
 
-      <button type="submit" class="btn btn-primary book-submit" id="bookSubmit">Send booking request →</button>
+      <button
+        type="submit"
+        class="btn btn-primary book-submit"
+        id="bookSubmit"
+      >
+        Send booking request →
+      </button>
+
       <p class="form-status" id="formStatus"></p>
+
     </form>
+
   </div>
 </section>
 
